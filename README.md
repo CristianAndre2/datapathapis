@@ -39,10 +39,10 @@ Se usa el parametro -- reload para que cada cambio se refleje de forma automatic
  4.2.   get_movie(movie_id: int = Query(..., alias="id")): --> con parametros obtiene la lista de peliculas en la tabla movies segun el ID
 ![get_con_param](https://github.com/CristianAndre2/datapathapis/assets/164831594/e36ff64a-1ba3-4763-b6d7-e776bdafc2b7)
   "originalmente el método se define asi: 
-     #@app.put('/movies/{movie_id}')
-     #def update_movie(movie_id: int, movie: Movie):
+                                       @app.put('/movies/{movie_id}')
+                                       def update_movie(movie_id: int, movie: Movie):
   pero se os indica que debia de ser probado con Postman 
-  # para que postman pueda recibir algo asi: http://127.0.0.1:8000/movies?id=2 de lo contrario habria que hacerlo asi http://127.0.0.1:8000/movies/2
+  para que postman pueda recibir algo asi: http://127.0.0.1:8000/movies?id=2 de lo contrario habria que hacerlo asi http://127.0.0.1:8000/movies/2
 
   4.3.   create_movie(movie: Movie):
   Es importante mencionar aqui que con cada nuevo envio en Postman se debe de limpiar el mismo como lo muestra la imagen pues aunque visualmente se vean
