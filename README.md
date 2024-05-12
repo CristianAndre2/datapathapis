@@ -1,7 +1,15 @@
 Este es la entrega del proyecto Apis de Despliegue Data API's con Python
 ![image](https://github.com/CristianAndre2/datapathapis/assets/164831594/19c33aa7-e96b-41d9-ba0d-5b7cdf7879d9)
 En vista que no se pudo completar la imagen que se debia de crear empaquetando FastApi con Postgre y con autorizacion del profesor Omar Tito se procede a subir las evidencias del 
-funcionamiento de la aplicacion, se nos pidio realizar un CRUD con FastApi demostrando que el mismo consumia bien los datos hacia y desde una BD que se
+funcionamiento de la aplicacion, a continuacion el detalle. 
+La creación de la imagén sin problemas
+![docker build](https://github.com/CristianAndre2/datapathapis/assets/164831594/a3c6d796-8776-4fcf-9d6c-9b1a76b5be50)
+Pero al momento de correr la imagen no temina de cargar por el puerto
+![docker run](https://github.com/CristianAndre2/datapathapis/assets/164831594/3a4573c7-3396-4708-bd25-1f899d8deacb)
+
+Se realizaron diferentes pruebas pero no termino de cargarla y por ende el comando docker-compose up no se ejecuta
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dicho esto se nos pidio realizar un CRUD con FastApi demostrando que el mismo consumia bien los datos hacia y desde una BD que se
 en PostgreSQL.
  Step 1. Descargar una imagen de Docker, desde una terminal en Visual Studio Code
  docker run --name mi-postgress -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
